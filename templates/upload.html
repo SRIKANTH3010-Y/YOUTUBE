@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload a video</title>
+</head>
+<body>
+    
+
+    <div>
+        <form action="" method="POST">{% csrf_token %}
+
+            <input type="text" name="title" placeholder="Enter video Title"><br>
+            <input type="file" name="video" accept="video/*">
+            <button type="submit">Upload New video </button>
+
+        </form>
+    </div>
+
+
+</body>
+</html>
